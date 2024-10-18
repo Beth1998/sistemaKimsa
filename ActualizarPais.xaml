@@ -1,0 +1,23 @@
+﻿<Window x:Class="SISTEMA_KINSA.ActualizarPais"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SISTEMA_KINSA"
+        mc:Ignorable="d"
+        Title="ActualizarPais" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFCC1941"/>
+                <GradientStop Color="#FF55B157" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="txtPaisActualizar" HorizontalAlignment="Center" FontSize="20" Margin="0,213,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnActualizarPais" Content="ACTUALIZAR" HorizontalAlignment="Center" Margin="0,261,0,0" VerticalAlignment="Top" Click="btnActualizarPais_Click" />
+        <Label Content="ACTUALIZAR PAIS" FontSize="25" HorizontalAlignment="Center" Margin="0,26,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="NOTA: Ingrese en el campo el País correctamente" FontSize="15" HorizontalAlignment="Center" Margin="0,74,0,0" VerticalAlignment="Top"/>
+        <Label Content="INGRESE EL PAIS" FontSize="15" HorizontalAlignment="Center" Margin="0,172,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

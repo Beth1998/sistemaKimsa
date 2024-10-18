@@ -1,0 +1,31 @@
+﻿<Window x:Class="SISTEMA_KINSA.ActualizarDetalles"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SISTEMA_KINSA"
+        mc:Ignorable="d"
+        Title="ActualizarDetalles" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF51D8BC"/>
+                <GradientStop Color="#FFA171DC" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="INGRESE EL PESO" FontSize="15" HorizontalAlignment="Left" Margin="127,155,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPeso" HorizontalAlignment="Left" FontSize="20" Margin="127,185,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="126"/>
+        <Button x:Name="btnActualizarDetalles" Content="ACTUALIZAR" FontSize="15" HorizontalAlignment="Left" Margin="365,354,0,0" VerticalAlignment="Top" Click="btnActualizarDetalles_Click"/>
+        <Label Content="FECHA DE ENTREGA" FontSize="15" HorizontalAlignment="Left" Margin="307,152,0,0" VerticalAlignment="Top" Width="146"/>
+        <DatePicker x:Name="dtpckFechaEntrega" HorizontalAlignment="Left" FontSize="20" Margin="286,181,0,0" VerticalAlignment="Top" Height="34" Width="222"/>
+        <Label Content="SELECCIONE EL CLIENTE" FontSize="15" HorizontalAlignment="Left" Margin="521,152,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbCliente" HorizontalAlignment="Left" FontSize="20" Margin="546,182,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="TIPO DE RESIDUO" FontSize="15" HorizontalAlignment="Left" Margin="249,239,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbTipoResiduo" HorizontalAlignment="Left" FontSize="20" Margin="253,269,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="RECOLECTOR" FontSize="15" HorizontalAlignment="Left" Margin="451,239,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbRecolector" HorizontalAlignment="Left" FontSize="20" Margin="440,269,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="ACTUALIZAR DETALLES" FontSize="25" HorizontalAlignment="Center" Margin="0,16,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="NOTA: Ingrese en todos los campos la información correctamente" FontSize="15" HorizontalAlignment="Center" Margin="0,64,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

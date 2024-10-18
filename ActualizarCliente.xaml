@@ -1,0 +1,51 @@
+﻿<Window x:Class="SISTEMA_KINSA.ActualizarCliente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SISTEMA_KINSA"
+        mc:Ignorable="d"
+        Title="ActualizarCliente" Height="480" Width="1050">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF12A9E8"/>
+                <GradientStop Color="#FF2D28BB" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="PRIMER NOMBRE" FontSize="15" HorizontalAlignment="Left" Margin="109,112,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPrimerNombre" HorizontalAlignment="Left" FontSize="20" Margin="113,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="SEGUNDO NOMBRE" FontSize="15" HorizontalAlignment="Left" Margin="271,112,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSegundoNombre" HorizontalAlignment="Left" FontSize="20" Margin="283,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="PRIMER APELLIDO" FontSize="15" HorizontalAlignment="Center" Margin="0,112,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPrimerApellido" HorizontalAlignment="Center" FontSize="20" Margin="0,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="SEGUNDO APELLIDO" FontSize="15" HorizontalAlignment="Left" Margin="653,112,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSegundoApellido" HorizontalAlignment="Left" FontSize="20" Margin="667,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="NUMERO DE CELULAR" FontSize="15" HorizontalAlignment="Left" Margin="818,112,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNumeroCelular" HorizontalAlignment="Left" FontSize="20" Margin="838,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="NACIONALIDAD" FontSize="15" HorizontalAlignment="Left" Margin="114,209,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNacionalidad" HorizontalAlignment="Left" FontSize="20" Margin="113,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="CORREO" FontSize="15" HorizontalAlignment="Left" Margin="309,209,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCorreo" HorizontalAlignment="Left" FontSize="20" Margin="259,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
+        <Label Content="DIRECCION&#xD;&#xA;DOMICILIARIA" FontSize="15" HorizontalAlignment="Left" Margin="499,189,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDireccionDomiciliaria" HorizontalAlignment="Left" FontSize="20" Margin="459,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186"/>
+        <Label Content="NUMERO &#xD;&#xA;DE CEDULA" FontSize="15" HorizontalAlignment="Left" Margin="683,189,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNumeroCedula" HorizontalAlignment="Left" FontSize="20" Margin="667,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="SELECCIONE EL GENERO" FontSize="15" HorizontalAlignment="Left" Margin="812,205,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbGenero" HorizontalAlignment="Left" FontSize="20" Margin="838,235,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="SELECCIONE EL BARRIO" FontSize="15" HorizontalAlignment="Left" Margin="150,300,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbBarrio" HorizontalAlignment="Left" FontSize="20" Margin="176,330,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="SELECCIONE EL CANTON" FontSize="15" HorizontalAlignment="Left" Margin="338,300,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbCanton" HorizontalAlignment="Left" FontSize="20" Margin="366,330,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="SELECCIONE LA PROVINCIA" FontSize="15" HorizontalAlignment="Left" Margin="546,300,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbProvincia" HorizontalAlignment="Left" FontSize="20" Margin="574,330,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="SELECCIONE EL PAIS" FontSize="15" HorizontalAlignment="Left" Margin="760,300,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbPais" HorizontalAlignment="Left" FontSize="20" Margin="772,330,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnActualizarCliente" FontSize="20" Content="Actualizar" HorizontalAlignment="Center" Margin="0,393,0,0" VerticalAlignment="Top" Click="btnActualizarCliente_Click"/>
+        <Label Content="ACTUALIZAR CLIENTE" FontSize="25" HorizontalAlignment="Center" Margin="0,13,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="NOTA: Ingrese la información del cliente en todos los campos correctamente" FontSize="15" HorizontalAlignment="Center" Margin="0,56,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEstado" HorizontalAlignment="Left" FontSize="20" Margin="233,402,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="32"/>
+        <Label Content="ESTADO" FontSize="15" HorizontalAlignment="Left" Margin="263,376,0,0" VerticalAlignment="Top" Height="26"/>
+
+    </Grid>
+</Window>

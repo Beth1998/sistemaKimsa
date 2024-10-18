@@ -1,0 +1,23 @@
+﻿<Window x:Class="SISTEMA_KINSA.ActualizarEstadoCivil"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SISTEMA_KINSA"
+        mc:Ignorable="d"
+        Title="ActualizarEstadoCivil" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF89E04F"/>
+                <GradientStop Color="#FF23A495" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="INGRESE EL ESTADO CIVIL" FontSize="15" HorizontalAlignment="Center" Margin="0,153,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEstadoCivil" HorizontalAlignment="Center" FontSize="20" Margin="0,188,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnActualizarEstadoCivil" Content="ACTUALIZAR" FontSize="15" HorizontalAlignment="Center" Margin="0,280,0,0" VerticalAlignment="Top" Click="btnActualizarEstadoCivil_Click"/>
+        <Label Content="ACTUALIZAR ESTADO CIVIL" FontSize="25" HorizontalAlignment="Center" Margin="0,23,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="NOTA: Ingrese en el campo el Estado Civil correctamente" FontSize="15" HorizontalAlignment="Center" Margin="0,71,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

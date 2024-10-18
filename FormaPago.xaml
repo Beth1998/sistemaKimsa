@@ -1,0 +1,32 @@
+﻿<Window x:Class="SISTEMA_KINSA.FormaPago"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SISTEMA_KINSA"
+        mc:Ignorable="d"
+        Title="FormaPago" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FF8A3287" Offset="1"/>
+                <GradientStop Color="#FF67BCCC" Offset="0"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Label Content="INGRESO DE PAGO A RECOLECTORES" FontSize="25" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="HORAS TRABAJADAS" FontSize="15" HorizontalAlignment="Left" Margin="67,127,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtHorasTrabajadas" HorizontalAlignment="Left" FontSize="20" Margin="79,157,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="126"/>
+        <Label Content="HORAS EXTRAS" FontSize="15" HorizontalAlignment="Left" Margin="265,127,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtHorasExtras" HorizontalAlignment="Left" FontSize="20" Margin="259,157,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="126"/>
+        <Label Content="PAGO POR HORA" FontSize="15" HorizontalAlignment="Left" Margin="427,127,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPagoHora" HorizontalAlignment="Left" FontSize="20" Margin="427,157,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="126"/>
+        <Label Content="FORMA DE PAGO" FontSize="15" HorizontalAlignment="Left" Margin="597,127,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFormaPago" HorizontalAlignment="Left" FontSize="20" Margin="596,157,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="126"/>
+        <DatePicker x:Name="dtpckFechaPago" HorizontalAlignment="Left" Margin="70,257,0,0" VerticalAlignment="Top"/>
+        <Label Content="FECHA DE PAGO" FontSize="15" HorizontalAlignment="Left" Margin="83,222,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnGenerarPago" Content="GENERAR PAGO" HorizontalAlignment="Left" Margin="570,254,0,0" VerticalAlignment="Top" Click="btnGenerarPago_Click" FontWeight="Bold" Height="27" Width="110"/>
+        <ComboBox x:Name="cmbFormaPago" HorizontalAlignment="Left" Margin="265,253,0,0" VerticalAlignment="Top" Width="152" Height="28"/>
+        <Label Content="DETALLES" FontSize="15" HorizontalAlignment="Left" Margin="304,216,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

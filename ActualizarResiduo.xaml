@@ -1,0 +1,25 @@
+﻿<Window x:Class="SISTEMA_KINSA.ActualizarResiduo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SISTEMA_KINSA"
+        mc:Ignorable="d"
+        Title="ActualizarResiduo" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF6DED5A"/>
+                <GradientStop Color="#FF043A05" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="INGRESE EL RESIDUO" FontSize="15" HorizontalAlignment="Left" Margin="207,150,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTipoResiduo" HorizontalAlignment="Left" FontSize="20" Margin="223,184,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnActualizarTipoResiduo" Content="ACTUALIZAR" FontSize="15" HorizontalAlignment="Center" Margin="0,318,0,0" VerticalAlignment="Top" Click="btnActualizarTipoResiduo_Click"/>
+        <Label Content="ACTUALIZAR TIPO DE RESIDUO" FontSize="25" HorizontalAlignment="Center" Margin="0,15,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="NOTA: Ingrese en el campo el Residuo correctamente" FontSize="15" HorizontalAlignment="Center" Margin="0,63,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbCategoriaR" HorizontalAlignment="Left" Margin="434,185,0,0" VerticalAlignment="Top" Width="128" Height="29"/>
+        <Label Content="SELECCIONE LA CATEGORIA" FontSize="15" HorizontalAlignment="Left" Margin="400,150,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFAD59CA-F488-443D-9D75-72BB43A7662E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SISTEMA_KINSA</RootNamespace>
+    <AssemblyName>SISTEMA_KINSA</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ActualizarBarrio.xaml.cs">
+      <DependentUpon>ActualizarBarrio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarCanton.xaml.cs">
+      <DependentUpon>ActualizarCanton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarCliente.xaml.cs">
+      <DependentUpon>ActualizarCliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarDetalles.xaml.cs">
+      <DependentUpon>ActualizarDetalles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarEstadoCivil.xaml.cs">
+      <DependentUpon>ActualizarEstadoCivil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarGenero.xaml.cs">
+      <DependentUpon>ActualizarGenero.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarPais.xaml.cs">
+      <DependentUpon>ActualizarPais.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarProvincia.xaml.cs">
+      <DependentUpon>ActualizarProvincia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarRecolector.xaml.cs">
+      <DependentUpon>ActualizarRecolector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarResiduo.xaml.cs">
+      <DependentUpon>ActualizarResiduo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Barrio.xaml.cs">
+      <DependentUpon>Barrio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Canton.xaml.cs">
+      <DependentUpon>Canton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.xaml.cs">
+      <DependentUpon>Cliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Detalles.xaml.cs">
+      <DependentUpon>Detalles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_civil.xaml.cs">
+      <DependentUpon>Estado_civil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormaPago.xaml.cs">
+      <DependentUpon>FormaPago.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Genero.xaml.cs">
+      <DependentUpon>Genero.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pais.xaml.cs">
+      <DependentUpon>Pais.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Provincia.xaml.cs">
+      <DependentUpon>Provincia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Recolector.xaml.cs">
+      <DependentUpon>Recolector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SISTEMA_KINSADataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SISTEMA_KINSADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SISTEMA_KINSADataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SISTEMA_KINSADataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TipoResiduo.xaml.cs">
+      <DependentUpon>TipoResiduo.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ActualizarBarrio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ActualizarCanton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ActualizarCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ActualizarDetalles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ActualizarEstadoCivil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ActualizarGenero.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ActualizarPais.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ActualizarProvincia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ActualizarRecolector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ActualizarResiduo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Barrio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Canton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Detalles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Estado_civil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormaPago.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Genero.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Pais.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Provincia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Recolector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TipoResiduo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SISTEMA_KINSADataSet.xsc">
+      <DependentUpon>SISTEMA_KINSADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SISTEMA_KINSADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SISTEMA_KINSADataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SISTEMA_KINSADataSet.xss">
+      <DependentUpon>SISTEMA_KINSADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SISTEMA_KINSADataSet1.xsc">
+      <DependentUpon>SISTEMA_KINSADataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SISTEMA_KINSADataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SISTEMA_KINSADataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SISTEMA_KINSADataSet1.xss">
+      <DependentUpon>SISTEMA_KINSADataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

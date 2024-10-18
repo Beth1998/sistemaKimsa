@@ -1,0 +1,73 @@
+﻿<Window x:Class="SISTEMA_KINSA.ActualizarRecolector"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SISTEMA_KINSA"
+        mc:Ignorable="d"
+        Title="ActualizarRecolector" Height="720" Width="1355">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF52D8CF"/>
+                <GradientStop Color="#FF3A8FB3" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="ACTUALIZAR RECOLECTOR" FontSize="25" HorizontalAlignment="Left" Margin="502,15,0,0" VerticalAlignment="Top" Height="48" Width="373" Foreground="#FF04070E" FontWeight="Bold"/>
+        <Label Content="NOTA: Ingrese en todos los campos la información del recolector correctamente" FontSize="15" HorizontalAlignment="Left" Margin="426,63,0,0" VerticalAlignment="Top"/>
+        <Label Content="PRIMER NOMBRE" FontSize="15" HorizontalAlignment="Left" Margin="131,121,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPrimerNombre" HorizontalAlignment="Left" FontSize="20" Margin="135,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="SEGUNDO NOMBRE" FontSize="15" HorizontalAlignment="Left" Margin="342,121,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSegundoNombre" HorizontalAlignment="Left" FontSize="20" Margin="355,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="PRIMER APELLIDO" FontSize="15" HorizontalAlignment="Left" Margin="587,121,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPrimerApellido" HorizontalAlignment="Left" FontSize="20" Margin="593,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="SEGUNDO APELLIDO" FontSize="15" HorizontalAlignment="Left" Margin="805,121,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSegundoApellido" HorizontalAlignment="Left" FontSize="20" Margin="819,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="NUMERO DE CÉDULA" FontSize="15" HorizontalAlignment="Left" Margin="1062,121,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNumeroCedula" HorizontalAlignment="Left" FontSize="20" Margin="1074,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="NUMERO DE CELULAR" FontSize="15" HorizontalAlignment="Left" Margin="115,199,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNumeroCelularReco" HorizontalAlignment="Left" FontSize="20" Margin="135,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="CORREO ELECTRONICO" FontSize="15" HorizontalAlignment="Left" Margin="335,200,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCorreo" HorizontalAlignment="Left" FontSize="20" Margin="328,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183"/>
+        <Label Content="TIPO DE SANGRE" FontSize="15" HorizontalAlignment="Left" Margin="595,199,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTipoSangre" HorizontalAlignment="Left" FontSize="20" Margin="598,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="CARGAS FAMILIARES" FontSize="15" HorizontalAlignment="Left" Margin="813,199,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCargasFamiliares" HorizontalAlignment="Left" FontSize="20" Margin="827,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="DIRECCION DOMICILIARIA " FontSize="15" HorizontalAlignment="Left" Margin="1053,199,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDireccion" HorizontalAlignment="Left" FontSize="20" Margin="1057,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186"/>
+        <Label Content="FECHA DE NACIMIENTO" FontSize="15" HorizontalAlignment="Left" Margin="606,473,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dtpckFechaNacimiento" HorizontalAlignment="Left" FontSize="20" Margin="584,501,0,0" VerticalAlignment="Top" Height="40" Width="230"/>
+        <Label Content="NOMBRE DE REFERENCIA&#xA; FAMILIAR" FontSize="15" HorizontalAlignment="Left" Margin="104,281,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombreReferencia" HorizontalAlignment="Left" FontSize="20" Margin="134,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="CELULAR DE REFERENCIA&#xA; FAMILIAR" FontSize="15" HorizontalAlignment="Left" Margin="330,281,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCelularReferencia" HorizontalAlignment="Left" FontSize="20" Margin="359,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="SALARIO" FontSize="15" HorizontalAlignment="Left" Margin="621,301,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSalario" HorizontalAlignment="Left" FontSize="20" Margin="594,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="FECHA DE INGRESO" FontSize="15" HorizontalAlignment="Left" Margin="872,471,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dtpckFechaIngreso" HorizontalAlignment="Left" FontSize="20" Margin="842,501,0,0" VerticalAlignment="Top" Height="40" Width="230"/>
+        <Label Content="TIENE ALGUNA ENFERMEDAD" FontSize="15" HorizontalAlignment="Left" Margin="322,471,0,0" VerticalAlignment="Top"/>
+        <Label Content="TIENE ALGUNA DISCAPACIDAD" FontSize="15" HorizontalAlignment="Left" Margin="78,472,0,0" VerticalAlignment="Top"/>
+        <Label Content="SELECCIONE EL GENERO" FontSize="15" HorizontalAlignment="Left" Margin="809,299,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbGenero" HorizontalAlignment="Left" FontSize="20" Margin="830,329,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="SELECCIONE EL BARRIO" FontSize="15" HorizontalAlignment="Left" Margin="106,392,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbBarrio" HorizontalAlignment="Left" FontSize="20" Margin="129,422,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="SELECCIONE EL CANTON" FontSize="15" HorizontalAlignment="Left" Margin="336,392,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbCanton" HorizontalAlignment="Left" FontSize="20" Margin="364,422,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="SELECCIONE LA PROVINCIA" FontSize="15" HorizontalAlignment="Left" Margin="570,392,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbProvincia" HorizontalAlignment="Left" FontSize="20" Margin="597,422,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="SELECCIONE EL PAIS" FontSize="15" HorizontalAlignment="Left" Margin="818,392,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbPais" HorizontalAlignment="Left" FontSize="20" Margin="830,422,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="SELECCIONE EL ESTADO CIVIL" FontSize="15" HorizontalAlignment="Left" Margin="1030,299,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbEstadoCivil" HorizontalAlignment="Left" FontSize="20" Margin="1074,329,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnActualizarRecolector" Content="ACTUALIZAR" FontSize="15" HorizontalAlignment="Left" Margin="827,620,0,0" VerticalAlignment="Top" Click="btnActualizarRecolector_Click"/>
+        <TextBox x:Name="txtDescDiscapacidad" HorizontalAlignment="Left" Margin="115,579,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Height="129"/>
+        <Label Content="DESCRIPCION DE DISCAPACIDAD" FontSize="15" HorizontalAlignment="Left" Margin="66,544,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDescEnfermedad" HorizontalAlignment="Left" Margin="359,579,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Height="129"/>
+        <Label Content="DESCRIPCION DE  ENFERMEDAD" FontSize="15" HorizontalAlignment="Left" Margin="324,544,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDiscapacidad" HorizontalAlignment="Left" FontSize="20" Margin="126,507,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEnfermedad" HorizontalAlignment="Left" FontSize="20" Margin="366,508,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="ESTADO" FontSize="15" HorizontalAlignment="Left" Margin="1102,396,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEstado" HorizontalAlignment="Left" FontSize="20" Margin="1074,426,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

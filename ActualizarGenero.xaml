@@ -1,0 +1,23 @@
+﻿<Window x:Class="SISTEMA_KINSA.ActualizarGenero"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SISTEMA_KINSA"
+        mc:Ignorable="d"
+        Title="ActualizarGenero" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFAF315F"/>
+                <GradientStop Color="#FF83359C" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="INGRESE EL GENERO" FontSize="15" HorizontalAlignment="Center" Margin="0,154,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtGenero" HorizontalAlignment="Center" FontSize="20" Margin="0,188,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnActualizarGenero" Content="ACTUALIZAR" FontSize="15" HorizontalAlignment="Center" Margin="0,327,0,0" VerticalAlignment="Top" Click="btnActualizarGenero_Click"/>
+        <Label Content="ACTUALIZAR GENERO" FontSize="25" HorizontalAlignment="Left" Margin="276,19,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="NOTA: Ingrese en el campo el Genero correctamente" FontSize="15" HorizontalAlignment="Center" Margin="0,66,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="SISTEMA_KINSA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SISTEMA_KINSA"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1060">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF6676B5" Offset="0.083"/>
+                <GradientStop Color="#FF5ED6CE" Offset="0.927"/>
+                <GradientStop Color="#FF8B99D4" Offset="0.36"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="SISTEMA KINZA" FontSize="25" HorizontalAlignment="Center" Margin="0,55,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Black" FontStyle="Italic"/>
+        <Button x:Name="btnRecolector1" FontSize="20" Content="RECOLECTOR" HorizontalAlignment="Left" Margin="129,198,0,0" VerticalAlignment="Top" Click="btnRecolector_Click"/>
+        <Button x:Name="btnCliente" Content="CLIENTE" FontSize="20" HorizontalAlignment="Left" Margin="303,198,0,0" VerticalAlignment="Top" Click="btnCliente_Click"/>
+        <Button x:Name="btnPais" Content="PAIS" FontSize="20" HorizontalAlignment="Left" Margin="431,198,0,0" VerticalAlignment="Top" Click="btnPais_Click"/>
+        <Button x:Name="btnProvincia" Content="PROVINCIA" FontSize="20" HorizontalAlignment="Left" Margin="509,198,0,0" VerticalAlignment="Top" Click="btnProvincia_Click"/>
+        <Button x:Name="btnCanton" Content="CANTON" FontSize="20" HorizontalAlignment="Left" Margin="647,198,0,0" VerticalAlignment="Top" Click="btnCanton_Click"/>
+        <Button x:Name="btnBarrio" Content="BARRIO" FontSize="20" HorizontalAlignment="Left" Margin="769,198,0,0" VerticalAlignment="Top" Click="btnBarrio_Click"/>
+        <Button x:Name="btnGenero" Content="GENERO" FontSize="20" HorizontalAlignment="Left" Margin="881,198,0,0" VerticalAlignment="Top" Click="btnGenero_Click"/>
+        <Button x:Name="btnEstadoCivil" Content="ESTADO CIVIL" FontSize="20" HorizontalAlignment="Left" Margin="278,0,0,0" VerticalAlignment="Center" Click="btnEstadoCivil_Click"/>
+        <Button x:Name="btnTipoResiduo" Content="TIPO DE RESIDUO" FontSize="20" HorizontalAlignment="Left" Margin="461,0,0,0" VerticalAlignment="Center" Click="btnTipoResiduo_Click"/>
+        <Button x:Name="btnDetalles" Content="DETALLES" FontSize="20" HorizontalAlignment="Left" Margin="665,0,0,0" VerticalAlignment="Center" Click="btnDetalles_Click"/>
+
+    </Grid>
+</Window>
